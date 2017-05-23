@@ -181,12 +181,12 @@ html, body {
     left: 20px;
 }
 #dowebok .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
-#dowebok .section1 { background: url(../images/1.jpg) 50%;}
-#dowebok .section2 { background: url(../images/2.jpg) 50%;}
-#dowebok .section3 { background: url(../images/3.jpg) 50%;}
-#dowebok .section4 { background: url(../images/4.jpg) 50%;}
-#dowebok .section5 { background: url(../images/4.jpg) 50%;}
-#dowebok .section6 { background: url(../images/4.jpg) 50%;}
+#dowebok .section1 { background: url(../images/bg.png) #87b0a5 50%;}
+#dowebok .section2 { background: url(../images/bg.png) #2BB092 50%;}
+#dowebok .section3 { background: url(../images/bg.png) #B0AE7F 50%;}
+#dowebok .section4 { background: url(../images/bg.png) #B05C6D 50%;}
+#dowebok .section5 { background: url(../images/bg.png) #B077A0 50%;}
+#dowebok .section6 { background: url(../images/bg.png) #9269B0 50%;}
 
 
 
