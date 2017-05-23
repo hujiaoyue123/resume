@@ -409,3 +409,128 @@ a {
 .exp_list_time:before {
     position: static !important;
 }
+/*page5 demo*/
+ #demo_content_list {
+     margin: 50px auto 20px;
+     width: 1000px;
+     height: 200px;
+ }
+
+.demo_box li {
+    z-index: 2;
+    width: 200px;
+    height: 150px;
+    margin: 25px;
+    float: left;
+    position: relative;
+    outline: 2px solid #EFEFEF;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 60px rgba(0, 0, 0, 0.1) inset;
+    background: #FFF;
+}
+
+.demo_box li:before {
+    z-index: -2;
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    content: "";
+    left: 14px;
+    bottom: 8px;
+    background: transparent;
+    -webkit-transform: skew(-12deg) rotate(-4deg);
+    transform: skew(-12deg) rotate(-4deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.demo_box li:after {
+    z-index: -1;
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    content: "";
+    right: 14px;
+    bottom: 8px;
+    background: transparent;
+    -webkit-transform: skew(12deg) rotate(4deg);
+    transform: skew(12deg) rotate(4deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+.demo_box_content {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.demo_box_title {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    -webkit-transform: translateY(-1000px);
+    transform: translateY(-1000px);
+    -webkit-transition-duration: .5s;
+    transition-duration: .5s;
+}
+
+.demo_box li:hover .demo_box_title {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+@keyframes b_to_t {
+    0% {
+        transform: translateY(20px);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.b_to_t {
+    -webkit-animation: b_to_t 1s;
+    -moz-animation: b_to_t 1s;
+    -o-animation: b_to_t 1s;
+    animation: b_to_t 1s;
+    visibility: visible;
+}
+.section5 .demo-title{
+    width: 100%;
+    position: absolute;
+    height: 60px;
+    top: 30px;
+    text-align: center;
+    font-size: 24px;
+}
+/*page6*/
+.section6{
+    width: 300px;
+    margin: 0 auto;
+}
+.section6 .contact{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 24px;
+    color: #FFF;
+    top:30px;
+}
+.section6  .contact-p1{
+    width: 100%;
+    position: absolute;
+    font-size: 18px;
+    top:140px;
+}
+.section6 .contact-p2{
+    width: 100%;
+    position: absolute;
+    top:170px;
+}
+.section6 .contact-p2 p{
+    font-size: 16px;
+}
