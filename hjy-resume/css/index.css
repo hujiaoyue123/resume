@@ -1,0 +1,411 @@
+.w {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    color: white;
+    font-size: 18px;
+}
+
+.header .logo {
+    float: left;
+}
+
+.header .logo .header-img {
+    width: 60px;
+    height: 60px;
+    float: left;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: url("../images/logo.jpg") no-repeat center;
+    margin-right: 15px;
+}
+
+.header .logo .header-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.header .logo .header-p {
+    float: left;
+    text-align: center;
+}
+
+.header .logo .header-p .p1 {
+    padding: 5px 15px;
+    border-bottom: 1px solid white;
+}
+
+.header .logo .header-p .p2 {
+    padding: 0 15px;
+}
+
+.header .nav {
+    float: right;
+}
+
+.header .nav .ul-header-nav li {
+    display: inline-block;
+    padding: 20px;
+}
+
+/*page1*/
+#dowebok .section1 .photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: url(../images/logo.jpg) center center no-repeat;
+    background-size: contain;
+    margin: 0 auto;
+    -webkit-transition: box-shadow .5s linear;
+    transition: box-shadow .5s linear;
+}
+
+#dowebok .section1 .photo:hover {
+    box-shadow: 0 0 15px #1FAEFF;
+}
+
+#dowebok .section1 .page1-line {
+    height: 1px;
+    width: 70%;
+    margin: 0 auto;
+    background: white;
+    margin-bottom: 20px;
+}
+
+#dowebok .section1 .maxim {
+    font-size: 22px;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+#dowebok .section1 .describe {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/*page2*/
+
+#dowebok .section2 .content .section2-list {
+    max-width: 800px;
+    margin: 44px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size: 18px;
+}
+
+#dowebok .section2 .content .section2-list li {
+    width: 100px;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+#dowebok .section2 .content .section2-list li .-img {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    -webkit-transition: background .2s, -webkit-transform ease-out .1s;
+    transition: background .2s, -webkit-transform ease-out .1s;
+    transition: transform ease-out .1s, background .2s;
+    transition: transform ease-out .1s, background .2s, -webkit-transform ease-out .1s;
+    background: rgba(255, 255, 255, .1);
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto
+}
+
+#dowebok .section2 .content .section2-list li .-img img {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    -webkit-transform: translateY(-50%) translateX(50%);
+    transform: translateY(-50%) translateX(50%);
+}
+
+#dowebok .section2 .content .section2-list li .-img:hover {
+    background: rgba(255, 255, 255, .05);
+    -webkit-transform: scale(.93);
+    transform: scale(.93);
+    color: #FFF;
+}
+
+#dowebok .section2 .content .section2-list li .-img:hover:after {
+    animation: effect 1.3s ease-out 75ms;
+}
+
+@keyframes effect {
+    0% {
+        opacity: .3
+    }
+    40% {
+        opacity: .5;
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #109085, 0 0 0 10px rgba(255, 255, 255, .5)
+    }
+    100% {
+        box-shadow: 0 0 0 2px rgba(255, 255, 255, .1), 0 0 10px 10px #109085, 0 0 0 10px rgba(255, 255, 255, .5);
+        -webkit-transform: scale(1.5);
+        transform: scale(1.5);
+        opacity: 0
+    }
+}
+
+#dowebok .section2 .content .section2-list li .-img:after {
+    content: '';
+    position: absolute;
+    box-shadow: 0 0 0 2px rgba(255, 255, 255, .1);
+    opacity: 0;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    left: 0;
+}
+
+#dowebok .section2 .content .about {
+    font-size: 18px;
+    text-align: center;
+}
+
+/*skill*/
+#skill_list {
+    margin: 20px auto;
+    width: 100%;
+    font-size: 16px;
+    height: 400px;
+}
+
+.skill_list_content {
+    float: left;
+    margin: 0 8%;
+    position: relative;
+    height: 400px;
+    visibility: hidden;
+}
+
+#skill_icon1 {
+    background: url('http://www.flqin.com/2015/image/ng.png') no-repeat;
+}
+
+#skill_icon2 {
+    background: url('http://www.flqin.com/2015/image/html.png') no-repeat;
+}
+
+#skill_icon3 {
+    background: url('http://www.flqin.com/2015/image/css.png') no-repeat;
+}
+
+.skill_icon {
+    cursor: pointer;
+    background-size: 100%;
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    margin: 30px auto;
+    webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    transition: transform .25s;
+}
+
+.skill_name {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.skill_flag {
+    margin: 20px auto;
+    width: 20px;
+    height: 20px;
+    background: url('http://www.flqin.com/2015/image/skill_flag.png');
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+.skill_int {
+    position: absolute;
+    top: 250px;
+    width: 320px;
+    left: -136px;
+    font-size: 14px;
+    line-height: 20px;
+    display: none;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    padding: 15px;
+    background: #C8C8DC;
+}
+
+.skill_int li {
+    font-size: 12px;
+    padding-left: 15px;
+}
+
+.skill_scale {
+    animation: skill_scale 1s;
+    visibility: visible;
+}
+
+.skill_list_content {
+    float: left;
+    margin: 0 8%;
+    position: relative;
+    height: 400px;
+}
+
+#skill_icon4 {
+    background: url('http://www.flqin.com/2015/image/html.png') no-repeat;
+}
+
+.skill_icon {
+    cursor: pointer;
+    background-size: 100%;
+    width: 90px;
+    height: 100px;
+    text-align: center;
+    margin: 30px auto;
+    webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    transition: transform .25s;
+}
+
+.skill_icon:hover {
+    webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: transform .25s;
+}
+
+.skill_name {
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.skill_flag_scale {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.skill_flag {
+    margin: 20px auto;
+    width: 20px;
+    height: 20px;
+    background: url('http://www.flqin.com/2015/image/skill_flag.png');
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+}
+
+#skill_content {
+    padding-top: 18px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#skill_info {
+    margin: 50px auto 0;
+    font-size: 22px;
+    text-align: justify;
+}
+
+.section3 .skill_content .title {
+    text-align: center;
+    font-size: 24px;
+}
+
+/*page4 exp*/
+.exp-wrap.section4 .exp-title {
+    /*position: absolute;*/
+}
+.section4 .exp-wrap {
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 900px;
+}
+
+/*arrow*/
+.section4 .exp-wrap .arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    z-index: 100;
+    top: 50%;
+    cursor: pointer;
+}
+
+.section4 .exp-wrap .arrow.left {
+    left: 0;
+}
+
+.section4 .exp-wrap .arrow.right {
+    right: 0;
+}
+
+.section4 .exp-wrap .exp-list-con {
+    width: 2700px;
+    height: 300px;
+    /*margin-left: 0px;*/
+}
+
+.section4 .exp-wrap .exp-list-con li {
+    width: 900px;
+    height: 300px;
+    float: left;
+    background: url("http://www.flqin.com/2015/image/exp_list_bg1.jpg");
+}
+
+/*轮播图内容*/
+.exp_list_left {
+    width: 533px;
+}
+
+.exp-list-con dl {
+    margin-left: 140px;
+    margin-top: 36px;
+    text-align: left;
+}
+
+.exp-list-con dt {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.exp-list-con dd {
+    position: relative;
+    font-size: 14px;
+}
+
+.exp_list_time {
+    font-size: 12px !important;
+    margin-top: -20px;
+    color: #333;
+}
+
+.exp-list-con dd:before {
+    position: absolute;
+    left: -15px;
+    top: 13px;
+    content: "";
+    width: 4px;
+    height: 4px;
+    background: #000;
+    border-radius: 50%;
+}
+
+.exp_list_time:before {
+    position: static !important;
+}

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #skill_list {
+            margin: 20px auto;
+            width: 100%;
+            font-size: 16px;
+            height: 400px;
+        }
+
+        .skill_list_content {
+            float: left;
+            margin: 0 8%;
+            position: relative;
+            height: 400px;
+            visibility: hidden;
+        }
+
+        #skill_icon1 {
+            background: url('http://www.flqin.com/2015/image/ng.png') no-repeat;
+        }
+
+        #skill_icon2 {
+            background: url('http://www.flqin.com/2015/image/html.png') no-repeat;
+        }
+
+        #skill_icon3 {
+            background: url('http://www.flqin.com/2015/image/css.png') no-repeat;
+        }
+
+        .skill_icon {
+            cursor: pointer;
+            background-size: 100%;
+            width: 90px;
+            height: 100px;
+            text-align: center;
+            margin: 30px auto;
+            webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            transition: transform .25s;
+        }
+
+        .skill_name {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .skill_flag {
+            margin: 20px auto;
+            width: 20px;
+            height: 20px;
+            background: url('http://www.flqin.com/2015/image/skill_flag.png');
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        .skill_int {
+            position: absolute;
+            top: 250px;
+            width: 320px;
+            left: -136px;
+            font-size: 14px;
+            line-height: 20px;
+            display: none;
+            border: 1px solid #CCC;
+            border-radius: 10px;
+            padding: 15px;
+            background: #C8C8DC;
+        }
+
+        .skill_int li {
+            font-size: 12px;
+            padding-left: 15px;
+        }
+
+        .skill_scale {
+            animation: skill_scale 1s;
+            visibility: visible;
+        }
+
+        .skill_list_content {
+            float: left;
+            margin: 0 8%;
+            position: relative;
+            height: 400px;
+        }
+
+        #skill_icon4 {
+            background: url('http://www.flqin.com/2015/image/html.png') no-repeat;
+        }
+
+        .skill_icon {
+            cursor: pointer;
+            background-size: 100%;
+            width: 90px;
+            height: 100px;
+            text-align: center;
+            margin: 30px auto;
+            webkit-transform: scale(1.0);
+            transform: scale(1.0);
+            transition: transform .25s;
+        }
+
+        .skill_icon:hover {
+            webkit-transform: scale(1.2);
+            transform: scale(1.2);
+            transition: transform .25s;
+        }
+
+        .skill_name {
+            text-align: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .skill_flag_scale {
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+        }
+
+        .skill_flag {
+            margin: 20px auto;
+            width: 20px;
+            height: 20px;
+            background: url('http://www.flqin.com/2015/image/skill_flag.png');
+            -webkit-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        #skill_content {
+            padding-top: 18px;
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        #skill_content .title {
+            text-align: center;
+            margin-top: 100px;
+            width: 100%;
+            height: 60px;
+        }
+
+        #skill_info {
+            margin: 50px auto 0;
+            width: 100%;
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div id="skill_content">
+    <div class="title">
+        <h1>专业技能</h1>
+    </div>
+    <div id="skill_info"><p>前端的学习需要持之以恒，知识深度与广度都很重要。而前端开发的重中之重就是原生javascript的理解。</p></div>
+    <div id="skill_list">
+        <div class="skill_list_content skill_scale" id="skill_list1">
+            <div class="skill_icon" id="skill_icon1"></div>
+            <div class="skill_name">AngularJs</div>
+            <div class="skill_flag"></div>
+            <div class="skill_int" id="skill_int1">
+                <ul>
+                    <li>熟练运用angularJS处理移动端的模块开发</li>
+                    <li>模块组件化</li>
+                    <li>了解双绑的背后实现</li>
+                    <li>熟练的指令编写</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skill_list_content skill_scale" id="skill_list2">
+            <div class="skill_icon" id="skill_icon2"></div>
+            <div class="skill_name">HTML</div>
+            <div class="skill_flag"></div>
+            <div class="skill_int" id="skill_int2">
+                <ul>
+                    <li>深刻理解Web标准</li>
+                    <li>熟练运用html标签</li>
+                    <li>熟悉xml及xhtml标记语言</li>
+                    <li>掌握html5如SVG，localstorage新特性</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skill_list_content skill_scale" id="skill_list3">
+            <div class="skill_icon" id="skill_icon3"></div>
+            <div class="skill_name">CSS</div>
+            <div class="skill_flag"></div>
+            <div class="skill_int" id="skill_int3">
+                <ul>
+                    <li>熟练运用css及css3新属性</li>
+                    <li>注重浏览器兼容性，熟悉常见的css hack（兼容至IE8）</li>
+                    <li>掌握bootstrap框架及源码的实现</li>
+                    <li>掌握css预编译器Less及Sass</li>
+                </ul>
+            </div>
+        </div>
+        <div class="skill_list_content skill_scale" id="skill_list4">
+            <div class="skill_icon" id="skill_icon4"></div>
+            <div class="skill_name">JavaScript</div>
+            <div class="skill_flag"></div>
+            <div class="skill_int" id="skill_int4">
+                <ul>
+                    <li>掌握jQuery</li>
+                    <li>掌握原生JS的编程</li>
+                    <li>注重JavaScript性能优化</li>
+                    <li>正在学习ES6</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+    $(function () {
+        $(".skill_icon").click(function () {
+            $(".skill_int").each(function () {
+                if ($(this).is(":visible")) {
+                    $(this).slideUp(200);
+                    $(this).prev().removeClass("skill_flag_scale");
+                }
+            });
+            if ($(this).siblings(".skill_int").is(":hidden")) {
+                $(this).siblings(".skill_int").slideDown(400);
+                $(this).siblings(".skill_flag").addClass("skill_flag_scale");
+            } else {
+                $(this).siblings(".skill_int").slideUp(200);
+                $(this).siblings(".skill_flag").removeClass("skill_flag_scale");
+            }
+        });
+    })
+</script>
+</body>
+</html>
