@@ -141,15 +141,16 @@ html, body {
 }
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span {
-    background: #333;
+    background: white;
 }
+
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
     top: 2px;
     left: 2px;
     width: 8px;
     height: 8px;
-    border: 1px solid #000;
+    border: 1px solid white;
     background: rgba(0, 0, 0, 0);
     border-radius: 50%;
     position: absolute;
@@ -181,11 +182,11 @@ html, body {
     left: 20px;
 }
 #dowebok .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
-#dowebok .section1 { background: url(../images/bg.png) #87b0a5 50%;}
+#dowebok .section1 { background: url(../images/bg.png) #0F84B0 50%;}
 #dowebok .section2 { background: url(../images/bg.png) #2BB092 50%;}
 #dowebok .section3 { background: url(../images/bg.png) #B0AE7F 50%;}
 #dowebok .section4 { background: url(../images/bg.png) #B05C6D 50%;}
-#dowebok .section5 { background: url(../images/bg.png) #B077A0 50%;}
+#dowebok .section5 { background: url(../images/bg.png) #2CB077 50%;}
 #dowebok .section6 { background: url(../images/bg.png) #9269B0 50%;}
 
 

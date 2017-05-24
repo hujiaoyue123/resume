@@ -27,10 +27,14 @@ a {
     width: 60px;
     height: 60px;
     float: left;
-    border: 1px solid black;
     border-radius: 50%;
-    background: url("../images/logo.jpg") no-repeat center;
+    background: url("../images/logo.png") no-repeat center;
     margin-right: 15px;
+}
+.header .logo .header-img a{
+    display: block;
+    width: 60px;
+    height: 60px;
 }
 
 .header .logo .header-img img {
@@ -63,18 +67,18 @@ a {
 
 /*page1*/
 #dowebok .section1 .photo {
-    width: 150px;
-    height: 150px;
+    width: 121px;
+    height: 148px;
     border-radius: 50%;
-    background: url(../images/logo.jpg) center center no-repeat;
-    background-size: contain;
+    background: url(../images/photo.jpg) 0px -4px  no-repeat;
+    background-size: cover;
     margin: 0 auto;
-    -webkit-transition: box-shadow .5s linear;
-    transition: box-shadow .5s linear;
+    -webkit-transition: box-shadow .9s linear;
+    transition: box-shadow .4s linear;
 }
 
 #dowebok .section1 .photo:hover {
-    box-shadow: 0 0 15px #1FAEFF;
+    box-shadow: 0 0 30px #2C91FF;
 }
 
 #dowebok .section1 .page1-line {
