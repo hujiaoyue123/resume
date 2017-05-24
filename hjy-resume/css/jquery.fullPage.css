@@ -181,7 +181,7 @@ html, body {
 #fp-nav ul li .fp-tooltip.left {
     left: 20px;
 }
-#dowebok .section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+#dowebok .section { text-align: center; "Microsoft Yahei"; color: #fff;}
 #dowebok .section1 { background: url(../images/bg.png) #0F84B0 50%;}
 #dowebok .section2 { background: url(../images/bg.png) #2BB092 50%;}
 #dowebok .section3 { background: url(../images/bg.png) #B0AE7F 50%;}

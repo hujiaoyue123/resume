@@ -227,6 +227,7 @@ a {
     text-align: center;
     width: 100%;
     position: relative;
+    font-size: 20px;
 }
 
 .skill_flag {
@@ -240,9 +241,9 @@ a {
 
 .skill_int {
     position: absolute;
-    top: 180px;
+    top: 190px;
     width: 240px;
-    left: -110px;
+    left: -98px;
     font-size: 20px;
     line-height: 20px;
     display: none;
@@ -273,7 +274,7 @@ a {
 .skill_icon {
     cursor: pointer;
     background-size: 100%;
-    width: 90px;
+    width: 86px;
     height: 100px;
     text-align: center;
     margin: 30px auto;
@@ -411,7 +412,7 @@ a {
     position: static !important;
 }
 /*page5 demo*/
- #demo_content_list {
+#demo_content_list {
      margin: 50px auto 20px;
      width: 1000px;
      height: 200px;
@@ -531,6 +532,8 @@ a {
     width: 100%;
     position: absolute;
     top:170px;
+    /*line-height: 30px;*/
+    /*margin-top: 20px;*/
 }
 .section6 .contact-p2 p{
     font-size: 16px;
