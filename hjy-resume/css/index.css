@@ -186,13 +186,7 @@ a {
     line-height: 30px;
 }
 
-/*skill*/
-#skill_list {
-    margin: 20px auto;
-    width: 100%;
-    font-size: 16px;
-    height: 400px;
-}
+/*page3 skill*/
 
 .skill_list_content {
     float: left;
@@ -247,9 +241,9 @@ a {
 .skill_int {
     position: absolute;
     top: 180px;
-    width: 320px;
-    left: -136px;
-    font-size: 14px;
+    width: 240px;
+    left: -110px;
+    font-size: 20px;
     line-height: 20px;
     display: none;
     border: 1px solid #CCC;
@@ -333,6 +327,7 @@ a {
 
 /*page4 exp*/
 .exp-wrap.section4 .exp-title {
+
     /*position: absolute;*/
 }
 .section4 .exp-wrap {
@@ -363,14 +358,14 @@ a {
 .section4 .exp-wrap .exp-list-con {
     width: 2700px;
     height: 300px;
-    /*margin-left: 0px;*/
+    margin-top: 50px;
 }
 
 .section4 .exp-wrap .exp-list-con li {
     width: 900px;
     height: 300px;
     float: left;
-    background: url("http://www.flqin.com/2015/image/exp_list_bg1.jpg");
+    background: url("../images/lunbo.jpg");
 }
 
 /*轮播图内容*/
@@ -392,6 +387,7 @@ a {
 .exp-list-con dd {
     position: relative;
     font-size: 14px;
+    line-height: 30px;
 }
 
 .exp_list_time {
@@ -407,7 +403,7 @@ a {
     content: "";
     width: 4px;
     height: 4px;
-    background: #000;
+    background: white;
     border-radius: 50%;
 }
 

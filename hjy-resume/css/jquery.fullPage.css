@@ -185,7 +185,7 @@ html, body {
 #dowebok .section1 { background: url(../images/bg.png) #0F84B0 50%;}
 #dowebok .section2 { background: url(../images/bg.png) #2BB092 50%;}
 #dowebok .section3 { background: url(../images/bg.png) #B0AE7F 50%;}
-#dowebok .section4 { background: url(../images/bg.png) #B05C6D 50%;}
+#dowebok .section4 { background: url(../images/bg.png) rgba(32, 48, 64, 0.91) 50%;}
 #dowebok .section5 { background: url(../images/bg.png) #2CB077 50%;}
 #dowebok .section6 { background: url(../images/bg.png) #9269B0 50%;}
 
